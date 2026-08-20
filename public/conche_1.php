@@ -5,7 +5,7 @@ require_once __DIR__ . '/../app/config/database.php';
 require_once __DIR__ . '/../app/controllers/MachineController.php';
 requireAuthMenu();
 
-$controller_buffer_tank = new MachineController($pdo);
+$controller_conche = new MachineController($pdo);
 $data = $controller_conche->get_batch($controller_conche->getIdConche1());
 // $details = $controller_conche->get_details_of_loading($controller_conche->getIdConche1());
 $hasStock = $data && (float)$data['current_qty_kg'] > 0;

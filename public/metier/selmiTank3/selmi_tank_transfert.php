@@ -30,7 +30,7 @@ $dataConche1 = $controller_selmi_tank->getEquipment($controller_selmi_tank->getI
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $result = $controller_selmi_tank->transfert($id, $_POST, $_SESSION['user_id']);
     if ($result === true){
-        header('Location: ../../selmi_tank_2.php');
+        header('Location: ../../selmi_tank_3.php');
         exit;
     } else {
         $error = $result;
@@ -297,7 +297,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                             <option value="<?= htmlspecialchars($controller_selmi_tank->getIdBufferTank1()) ?>">Buffer Tank 1 - <?= htmlspecialchars((string)$dataBufferTank1['current_qty_kg']) ?> Kg / <?= htmlspecialchars((string)$dataBufferTank1['capacity_kg']) ?> Kg</option>
                             <option value="<?= htmlspecialchars($controller_selmi_tank->getIdBufferTank2()) ?>">Buffer Tank 2 - <?= htmlspecialchars((string)$dataBufferTank2['current_qty_kg']) ?> Kg / <?= htmlspecialchars((string)$dataBufferTank2['capacity_kg']) ?> Kg</option>
                             <option value="<?= htmlspecialchars($controller_selmi_tank->getIdSelmiTank1()) ?>">Selmi Tank 1 - <?= htmlspecialchars((string)$dataSelmiTank1['current_qty_kg']) ?> Kg / <?= htmlspecialchars((string)$dataSelmiTank1['capacity_kg']) ?> Kg</option>
-                            <option value="<?= htmlspecialchars($controller_selmi_tank->getIdSelmiTank3()) ?>">Selmi Tank 2 - <?= htmlspecialchars((string)$dataSelmiTank2['current_qty_kg']) ?> Kg / <?= htmlspecialchars((string)$dataSelmiTank2['capacity_kg']) ?> Kg</option>
+                            <option value="<?= htmlspecialchars($controller_selmi_tank->getIdSelmiTank2()) ?>">Selmi Tank 2 - <?= htmlspecialchars((string)$dataSelmiTank2['current_qty_kg']) ?> Kg / <?= htmlspecialchars((string)$dataSelmiTank2['capacity_kg']) ?> Kg</option>
                             <option value="<?= htmlspecialchars($controller_selmi_tank->getIdConche2()) ?>">Conche 2 - <?= htmlspecialchars((string)$dataConche2['current_qty_kg']) ?> Kg / <?= htmlspecialchars((string)$dataConche2['capacity_kg']) ?> Kg</option>
                             <option value="<?= htmlspecialchars($controller_selmi_tank->getIdConche1()) ?>">Conche 1 - <?= htmlspecialchars((string)$dataConche1['current_qty_kg']) ?> Kg / <?= htmlspecialchars((string)$dataConche1['capacity_kg']) ?> Kg</option>
                         </select>

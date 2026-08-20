@@ -198,7 +198,7 @@ $hasStock = $data && (float)$data['current_qty_kg'] > 0;
 
     <div class="glass-container">
         <header style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
-            <h1>Selmi TANK 2</h1>
+            <h1>Selmi TANK 3</h1>
             <button class="btn accent" onclick="location.href='index.php'" style="width: auto;" >Back to menu</button>
         </header>
     

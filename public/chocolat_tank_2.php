@@ -5,8 +5,8 @@ require_once __DIR__ . '/../app/config/database.php';
 require_once __DIR__ . '/../app/controllers/MachineController.php';
 requireAuthMenu();
 
-$controller_buffer_tank = new MachineController($pdo);
-$data = $controller_buffer_tank->get_batch($controller_buffer_tank->getIdBufferTank2());
+$controller_chocolat_tank = new MachineController($pdo);
+$data = $controller_chocolat_tank->get_batch($controller_chocolat_tank->getIdChocoTank2());
 $hasStock = $data && (float)$data['current_qty_kg'] > 0;
 ?>
 

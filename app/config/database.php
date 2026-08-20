@@ -1,13 +1,16 @@
 <?php
 $host = 'localhost';
+
 // For Windows
 $db   = 'daily';
 $user = 'root';
 $pass = '';
+
 // For Mac
 // $db   = 'db_daily_reconcile';
 // $user = 'root';
 // $pass = 'root';
+
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
